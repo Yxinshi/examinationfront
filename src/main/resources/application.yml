@@ -1,12 +1,12 @@
 #指定端口号
 server:
-  port: 8081
+  port: 8082
 #  servlet:
 #    jsp:
 #      init-parameters: true
 spring:
   application:
-    name: biddingfd
+    name: examinationfront
   #rabbitmq
 #  rabbitmq:
 #    host: localhost
@@ -30,11 +30,11 @@ spring:
   #mysql数据库连接
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://114.55.92.94:3307/paimai?useUnicode=true&allowMultiQueries=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://114.55.92.94:3307/examination?useUnicode=true&allowMultiQueries=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: admin123
     type: com.zaxxer.hikari.HikariDataSource
-    hikari:
+    hiqkari:
       pool-name: BiddingfdHikariPool
       maximum-pool-size: 12
       connection-timeout: 60000
@@ -66,10 +66,10 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
-  type-aliases-package: com.bgs.biddingfd.pojo
+  type-aliases-package: com.bgs.examinationfront.pojo
 #打印sql语句
 logging:
   level:
     com:
       bgs:
-        biddingfd: debug
+        examinationfront: debug
