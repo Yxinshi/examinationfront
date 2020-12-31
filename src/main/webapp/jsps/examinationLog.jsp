@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>考试记录</title>
 </head>
 <body>
-<h1>历史成绩</h1>
+    <h1>历史成绩</h1>
 </body>
 </html>

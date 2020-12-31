@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.examinationfront.mapper.LoginMapper">
+
+    <!-- //查询电话号码是否存在
+    boolean selectPhone(String phone); -->
+    <select id="selectPhone" resultType="boolean">
+       SELECT count(1) FROM `user`,role WHERE role.role_id = `user`.role_id AND role.role_name = '员工' AND phone = #{phone}
+    </select>
+</mapper>
