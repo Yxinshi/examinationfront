@@ -21,7 +21,10 @@ public class LoginController {
 
     @Autowired
     private LoginService loginService;
-
+/**
+ *
+ * 登录使用
+ * */
     //电话号码登录
     @RequestMapping("/loginUser")
     @ResponseBody
