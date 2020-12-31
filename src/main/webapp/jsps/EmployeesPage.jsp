@@ -28,7 +28,7 @@
                     贤心
                 </a>
             </li>
-            <li class="layui-nav-item"><a href="">退了</a></li>
+            <li class="layui-nav-item"><a href="">退出登录</a></li>
         </ul>
 
     </div>
@@ -42,7 +42,7 @@
                     <img src="/static\imgs\tubiao.jpg" style="height: 80px;width: 80px;margin: 15px 20px 25px 65px;">
                 </li>
 
-                <li class="layui-nav-item layui-nav-itemed">
+                <li class="layui-nav-item layui-nav-itemed" aria-selected="true">
                     <a href="onlineExamination.jsp" style="margin: 15px 20px 25px 50px;">
                         在线考试
                     </a>
@@ -64,7 +64,7 @@
 
     <div class="layui-body">
 
-        <iframe  frameborder="0" scrolling="no" id="iframeMain" src="" style="width: 100%"; height="90%";></iframe>
+        <iframe  frameborder="0" scrolling="no"  id="iframeMain" src="" style="width: 100%"; height="90%";></iframe>
 
     </div>
 
