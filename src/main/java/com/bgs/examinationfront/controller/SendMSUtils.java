@@ -15,8 +15,8 @@ public class SendMSUtils {
 		restAPI.init("app.cloopen.com", "8883");
 		//设置业务信息
 		//初始化主账号名称和主账号令牌
-		restAPI.setAccount("8a216da8762cb4570176b121694c2f64", "444fd240e17e478c861adf8af6dd84e3");
-		restAPI.setAppId("8a216da8762cb4570176b1216a342f6a");
+		restAPI.setAccount("8aaf07086812057f0168313b618c106e", "c56fc2d0fe2b40bb8cd6bf5ad4761165");
+		restAPI.setAppId("8aaf07086812057f0168313b61dd1074");
 		//请使用管理控制台中已创建的应用的APPID，则13000000000手机号收到的短信内容是：【云通讯】您使用的是云通讯短信模板，您的验证码是6532，请于5分钟内
 
 		result=restAPI.sendTemplateSMS(phone, "1", new String[] {code,"5"});

@@ -121,6 +121,7 @@
                             window.location.href="EmployeesPage.jsp";
                         }else{
                             console.log("失败");
+                            window.location.reload();
                         }
                     },
                     //error代表你的ajax访问出现问题后出现错误调用的方法

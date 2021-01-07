@@ -57,6 +57,7 @@ public class LoginController {
         Assert.notNull(captcha, "亲，验证码不能为空！");
         //如果不为空 获取短信发送时的验证码
         String code = (String) session.getAttribute("code");
+        System.out.println(code);
         //获取session中的值进行判断，如果为空 代表超时
         Assert.notNull(code,"验证码超时！");
         //基本数据类型比较用==String类型用equals
