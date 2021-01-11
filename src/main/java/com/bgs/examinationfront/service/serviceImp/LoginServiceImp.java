@@ -14,8 +14,8 @@ public class LoginServiceImp implements LoginService {
 
     //查询电话号码是否存在
     @Override
-    public boolean selectPhone(String phone) {
-        boolean selectPhone = loginMapper.selectPhone(phone);
+    public User selectPhone(String phone) {
+        User selectPhone = loginMapper.selectPhone(phone);
         return selectPhone;
     }
 }

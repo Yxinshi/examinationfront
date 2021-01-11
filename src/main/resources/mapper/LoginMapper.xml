@@ -6,6 +6,6 @@
     <!-- //查询电话号码是否存在
     boolean selectPhone(String phone); -->
     <select id="selectPhone" resultType="boolean">
-       SELECT count(1) FROM `user`,role WHERE role.role_id = `user`.role_id AND role.role_name = '员工' AND phone = #{phone}
+       SELECT count(1) ,`user`.* FROM `user`,role WHERE role.role_id = `user`.role_id AND role.role_name = '员工' AND phone = #{phone}
     </select>
 </mapper>
